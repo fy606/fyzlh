@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>枫叶指令宏文档</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      // 网站名称，会显示在侧边栏
+      name: '📄 枫叶指令宏文档',
+      // 加载侧边栏 (需要创建 _sidebar.md 文件)
+      loadSidebar: true,
+      // 侧边栏中显示的最大标题层级 (如 ## 标题)
+      subMaxLevel: 3,
+      // 启用 emoji 解析
+      emoji: true,
+      // 全文搜索配置
+      search: {
+        maxAge: 86400000, // 缓存一天
+        paths: 'auto',
+        placeholder: '搜索文档...',
+        noData: '没有找到结果',
+        depth: 3
+      }
+    }
+  </script>
+  <!-- 加载 docsify 核心文件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <!-- 加载搜索插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <!-- 加载 emoji 插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>
+  <!-- 加载图片缩放插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+</body>
+</html>

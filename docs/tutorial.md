@@ -45,6 +45,7 @@
 按键\d\
 ; 输入完成
 ```
+![tutorial_1.gif](https://raw.gitcode.com/user-images/assets/9413885/889001eb-cfd6-4640-ac8b-f21e95f8f081/tutorial_1.gif 'tutorial_1.gif')
 
 ```
 ; 第一个脚本：自动打开记事本并输入 Hello World

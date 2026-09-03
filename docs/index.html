@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
   <meta charset="UTF-8">
   <title>枫叶指令宏文档</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "枫叶指令宏完整语法规范",
+    "description": "自动化脚本语言的完整语法定义",
+    "keywords": "枫叶指令宏, 自动化脚本, 语法规范",
+    "version": "1.0",
+    "datePublished": "2026-03-19"
+  }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
     :root {
       --sidebar-w: 240px;
@@ -27,7 +39,7 @@
       margin: 0;
     }
 
-    /* 左侧边栏（docsify 原生） */
+    /* 左侧边栏 */
     .sidebar {
       width: var(--sidebar-w) !important;
       background: var(--bg-side) !important;
@@ -36,7 +48,8 @@
       transform: none !important;
       transition: none !important;
     }
-    .sidebar > h1 {
+
+    .sidebar>h1 {
       margin: 0;
       padding: 20px 16px;
       font-size: 16px;
@@ -47,6 +60,7 @@
       z-index: 9;
       background: var(--bg-side);
     }
+
     .sidebar ul li a {
       font-size: 14px;
       padding: 8px 16px;
@@ -56,34 +70,38 @@
       transition: all 0.2s ease;
       display: block;
     }
+
     .sidebar ul li a:hover {
       background-color: #f3f4f6;
       text-decoration: none;
     }
+
     .sidebar ul li a.active {
       background-color: var(--accent) !important;
       color: white !important;
       font-weight: 500;
     }
+
     .sidebar ul ul {
       padding-left: 12px;
       margin-left: 12px;
       border-left: 1px solid var(--border);
     }
 
-    /* 主内容区：完全占据右侧，不留空白 */
+    /* 主内容区*/
     .content {
       left: var(--sidebar-w) !important;
-      right: 0 !important;           /* 原来为 calc(...)，现改为0 */
+      right: 0 !important;
       padding-top: 20px !important;
       padding-bottom: 40px !important;
       background: transparent !important;
       transform: none !important;
       transition: none !important;
     }
+
     .markdown-section {
       max-width: none !important;
-      margin: 0 20px !important;      /* 左右留一点边距，美观 */
+      margin: 0 20px !important;
       padding: 32px !important;
       background: var(--bg-main) !important;
       border-radius: 8px !important;
@@ -95,6 +113,7 @@
     .sidebar::-webkit-scrollbar {
       width: 6px;
     }
+
     .sidebar::-webkit-scrollbar-thumb {
       background: #d1d5db;
       border-radius: 3px;
@@ -106,21 +125,25 @@
         left: 0 !important;
         padding: 0 !important;
       }
+
       .markdown-section {
         margin: 0 !important;
         border-radius: 0 !important;
         border: none !important;
         padding: 20px 16px !important;
       }
+
       .sidebar {
         transform: translateX(-var(--sidebar-w)) !important;
       }
+
       .sidebar.show {
         transform: translateX(0) !important;
       }
     }
   </style>
 </head>
+
 <body>
   <div id="app"></div>
   <script>
@@ -139,9 +162,10 @@
       }
     };
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
 </body>
+
 </html>
